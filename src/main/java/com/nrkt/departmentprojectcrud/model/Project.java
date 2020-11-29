@@ -31,6 +31,7 @@ public class Project extends BaseEntity {
     @OneToMany(
             cascade = CascadeType.ALL,
             mappedBy = "project",
+            fetch = FetchType.LAZY,
             orphanRemoval = true)
     transient Set<Task> tasks;
 }

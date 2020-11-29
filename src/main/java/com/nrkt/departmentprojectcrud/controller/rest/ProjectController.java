@@ -31,6 +31,7 @@ public class ProjectController implements BaseController<ProjectResponse, Projec
     ProjectService projectService;
 
     @Override
+    @ApiOperation(value = "Get All Projects")
     public PagedModel<ProjectResponse> getEntityList(
             @ApiParam(value = "Page Number")
             @RequestParam(defaultValue = "0", required = false) Integer page,
@@ -63,6 +64,7 @@ public class ProjectController implements BaseController<ProjectResponse, Projec
     }
 
     @Override
+    @ApiOperation(value = "Get Project")
     public ProjectResponse getEntity(@NotNull Long id) {
         return projectService.getProject(id);
     }
@@ -74,7 +76,7 @@ public class ProjectController implements BaseController<ProjectResponse, Projec
 
     @GetMapping("status/{status}")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Get Project")
+    @ApiOperation(value = "Get Project by Status")
     @ApiResponses(value = {
             @ApiResponse(code = 404, message = "Project Not Found!"),
             @ApiResponse(code = 500, message = "Internal Server Error")
