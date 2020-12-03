@@ -1,5 +1,5 @@
 # Spring Boot CRUD Example 
-> It is an example of Basic CRUD with Richardson Maturity Model Level 3 (HATEOAS).
+> It is an example of CRUD with Richardson Maturity Model Level 3 (HATEOAS).
 >
 
 ## Used Dependencies
