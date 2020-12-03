@@ -1,15 +1,16 @@
-package com.nrkt.departmentprojectcrud.boostrap;
+package com.nrkt.departmentprojectcrud.bootstrapper;
 
-import com.nrkt.departmentprojectcrud.model.*;
-import com.nrkt.departmentprojectcrud.model.enums.AddressType;
-import com.nrkt.departmentprojectcrud.model.enums.TaskStatus;
-import com.nrkt.departmentprojectcrud.model.other.EmployeeToProjectKey;
+import com.nrkt.departmentprojectcrud.domain.*;
+import com.nrkt.departmentprojectcrud.domain.enums.AddressType;
+import com.nrkt.departmentprojectcrud.domain.enums.TaskStatus;
+import com.nrkt.departmentprojectcrud.domain.other.EmployeeToProjectKey;
 import com.nrkt.departmentprojectcrud.repository.*;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -28,6 +29,7 @@ public class DataLoader implements CommandLineRunner {
     LocationRepository locationRepository;
 
     @Override
+    @Transactional
     public void run(String... args) {
 
         var department = Department.builder()

@@ -1,11 +1,11 @@
 package com.nrkt.departmentprojectcrud.utils;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter;
 
-public class MediaTypeYmlConverter extends AbstractJackson2HttpMessageConverter {
-    public MediaTypeYmlConverter(ObjectMapper objectMapper) {
-        super(objectMapper, MediaType.parseMediaType("application/x-yaml"));
+public final class MediaTypeYmlConverter extends AbstractJackson2HttpMessageConverter {
+    public MediaTypeYmlConverter() {
+        super(new YAMLMapper(), MediaType.parseMediaType("application/x-yaml"));
     }
 }

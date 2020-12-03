@@ -4,7 +4,7 @@ import com.nrkt.departmentprojectcrud.dto.request.ProjectRequest;
 import com.nrkt.departmentprojectcrud.dto.response.ProjectResponse;
 import com.nrkt.departmentprojectcrud.dto.response.enums.PageSort;
 import com.nrkt.departmentprojectcrud.dto.response.enums.ProjectStatus;
-import com.nrkt.departmentprojectcrud.model.Employee;
+import com.nrkt.departmentprojectcrud.domain.Employee;
 import com.nrkt.departmentprojectcrud.service.project.ProjectService;
 import io.swagger.annotations.*;
 import lombok.AccessLevel;

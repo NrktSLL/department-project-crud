@@ -1,7 +1,7 @@
-package com.nrkt.departmentprojectcrud.model;
+package com.nrkt.departmentprojectcrud.domain;
 
-import com.nrkt.departmentprojectcrud.model.base.BaseEntity;
-import com.nrkt.departmentprojectcrud.model.enums.AddressType;
+import com.nrkt.departmentprojectcrud.domain.base.BaseEntity;
+import com.nrkt.departmentprojectcrud.domain.enums.AddressType;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

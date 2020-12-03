@@ -2,7 +2,7 @@ package com.nrkt.departmentprojectcrud.controller.rest;
 
 import com.nrkt.departmentprojectcrud.dto.request.LocationRequest;
 import com.nrkt.departmentprojectcrud.dto.response.LocationResponse;
-import com.nrkt.departmentprojectcrud.model.enums.AddressType;
+import com.nrkt.departmentprojectcrud.domain.enums.AddressType;
 import com.nrkt.departmentprojectcrud.service.location.LocationService;
 import io.swagger.annotations.*;
 import lombok.AccessLevel;

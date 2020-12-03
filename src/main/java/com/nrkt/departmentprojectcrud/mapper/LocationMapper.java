@@ -2,7 +2,7 @@ package com.nrkt.departmentprojectcrud.mapper;
 
 import com.nrkt.departmentprojectcrud.dto.request.LocationRequest;
 import com.nrkt.departmentprojectcrud.dto.response.LocationResponse;
-import com.nrkt.departmentprojectcrud.model.Location;
+import com.nrkt.departmentprojectcrud.domain.Location;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

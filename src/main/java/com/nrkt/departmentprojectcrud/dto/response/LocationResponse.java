@@ -1,7 +1,7 @@
 package com.nrkt.departmentprojectcrud.dto.response;
 
 import com.nrkt.departmentprojectcrud.dto.response.base.BaseResponse;
-import com.nrkt.departmentprojectcrud.model.enums.AddressType;
+import com.nrkt.departmentprojectcrud.domain.enums.AddressType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;

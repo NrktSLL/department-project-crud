@@ -9,7 +9,7 @@ import com.nrkt.departmentprojectcrud.dto.response.ProjectResponse;
 import com.nrkt.departmentprojectcrud.dto.response.enums.PageSort;
 import com.nrkt.departmentprojectcrud.dto.response.enums.ProjectStatus;
 import com.nrkt.departmentprojectcrud.mapper.ProjectMapper;
-import com.nrkt.departmentprojectcrud.model.Project;
+import com.nrkt.departmentprojectcrud.domain.Project;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.stereotype.Component;

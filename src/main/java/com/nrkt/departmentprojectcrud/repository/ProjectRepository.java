@@ -1,6 +1,6 @@
 package com.nrkt.departmentprojectcrud.repository;
 
-import com.nrkt.departmentprojectcrud.model.Project;
+import com.nrkt.departmentprojectcrud.domain.Project;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

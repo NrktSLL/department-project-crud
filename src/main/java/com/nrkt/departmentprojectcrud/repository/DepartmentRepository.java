@@ -1,6 +1,6 @@
 package com.nrkt.departmentprojectcrud.repository;
 
-import com.nrkt.departmentprojectcrud.model.Department;
+import com.nrkt.departmentprojectcrud.domain.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

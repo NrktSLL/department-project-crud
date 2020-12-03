@@ -8,7 +8,7 @@ import com.nrkt.departmentprojectcrud.dto.request.DepartmentRequest;
 import com.nrkt.departmentprojectcrud.dto.response.DepartmentResponse;
 import com.nrkt.departmentprojectcrud.dto.response.enums.PageSort;
 import com.nrkt.departmentprojectcrud.mapper.DepartmentMapper;
-import com.nrkt.departmentprojectcrud.model.Department;
+import com.nrkt.departmentprojectcrud.domain.Department;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.stereotype.Component;

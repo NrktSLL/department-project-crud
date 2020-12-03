@@ -1,4 +1,4 @@
-package com.nrkt.departmentprojectcrud.model.base;
+package com.nrkt.departmentprojectcrud.domain.base;
 
 import lombok.*;
 

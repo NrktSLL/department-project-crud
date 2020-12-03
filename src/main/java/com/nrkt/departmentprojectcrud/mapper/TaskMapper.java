@@ -2,7 +2,7 @@ package com.nrkt.departmentprojectcrud.mapper;
 
 import com.nrkt.departmentprojectcrud.dto.request.TaskRequest;
 import com.nrkt.departmentprojectcrud.dto.response.TaskResponse;
-import com.nrkt.departmentprojectcrud.model.Task;
+import com.nrkt.departmentprojectcrud.domain.Task;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

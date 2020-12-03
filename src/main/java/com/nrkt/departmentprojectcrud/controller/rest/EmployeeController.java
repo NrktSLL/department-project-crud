@@ -4,7 +4,7 @@ import com.nrkt.departmentprojectcrud.dto.request.EmployeeRequest;
 import com.nrkt.departmentprojectcrud.dto.response.EmployeeResponse;
 import com.nrkt.departmentprojectcrud.dto.response.enums.PageSort;
 import com.nrkt.departmentprojectcrud.exception.location.LocationEmpty;
-import com.nrkt.departmentprojectcrud.model.Employee;
+import com.nrkt.departmentprojectcrud.domain.Employee;
 import com.nrkt.departmentprojectcrud.service.employee.EmployeeService;
 import com.nrkt.departmentprojectcrud.service.location.LocationService;
 import io.swagger.annotations.*;

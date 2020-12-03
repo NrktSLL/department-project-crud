@@ -1,6 +1,6 @@
 package com.nrkt.departmentprojectcrud.dto.request;
 
-import com.nrkt.departmentprojectcrud.model.enums.TaskStatus;
+import com.nrkt.departmentprojectcrud.domain.enums.TaskStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;

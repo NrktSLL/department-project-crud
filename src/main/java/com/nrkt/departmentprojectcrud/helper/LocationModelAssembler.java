@@ -6,7 +6,7 @@ import com.nrkt.departmentprojectcrud.controller.web.WebController;
 import com.nrkt.departmentprojectcrud.dto.request.LocationRequest;
 import com.nrkt.departmentprojectcrud.dto.response.LocationResponse;
 import com.nrkt.departmentprojectcrud.mapper.LocationMapper;
-import com.nrkt.departmentprojectcrud.model.Location;
+import com.nrkt.departmentprojectcrud.domain.Location;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.stereotype.Component;

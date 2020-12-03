@@ -1,6 +1,6 @@
-package com.nrkt.departmentprojectcrud.model;
+package com.nrkt.departmentprojectcrud.domain;
 
-import com.nrkt.departmentprojectcrud.model.other.EmployeeToProjectKey;
+import com.nrkt.departmentprojectcrud.domain.other.EmployeeToProjectKey;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

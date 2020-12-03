@@ -1,7 +1,7 @@
 package com.nrkt.departmentprojectcrud.repository;
 
-import com.nrkt.departmentprojectcrud.model.EmployeeToProject;
-import com.nrkt.departmentprojectcrud.model.other.EmployeeToProjectKey;
+import com.nrkt.departmentprojectcrud.domain.EmployeeToProject;
+import com.nrkt.departmentprojectcrud.domain.other.EmployeeToProjectKey;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

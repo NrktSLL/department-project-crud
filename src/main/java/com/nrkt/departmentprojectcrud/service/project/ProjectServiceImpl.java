@@ -9,10 +9,10 @@ import com.nrkt.departmentprojectcrud.exception.project.ProjectNotFoundException
 import com.nrkt.departmentprojectcrud.helper.EmployeeModelAssembler;
 import com.nrkt.departmentprojectcrud.helper.ProjectModelAssembler;
 import com.nrkt.departmentprojectcrud.mapper.TaskMapper;
-import com.nrkt.departmentprojectcrud.model.EmployeeToProject;
-import com.nrkt.departmentprojectcrud.model.Project;
-import com.nrkt.departmentprojectcrud.model.Task;
-import com.nrkt.departmentprojectcrud.model.other.EmployeeToProjectKey;
+import com.nrkt.departmentprojectcrud.domain.EmployeeToProject;
+import com.nrkt.departmentprojectcrud.domain.Project;
+import com.nrkt.departmentprojectcrud.domain.Task;
+import com.nrkt.departmentprojectcrud.domain.other.EmployeeToProjectKey;
 import com.nrkt.departmentprojectcrud.repository.EmployeeRepository;
 import com.nrkt.departmentprojectcrud.repository.EmployeeToProjectRepository;
 import com.nrkt.departmentprojectcrud.repository.ProjectRepository;
@@ -109,6 +109,7 @@ public class ProjectServiceImpl implements ProjectService {
 
         var tasks = taskRepository.findAllByProject(project);
         if (!tasks.isEmpty()) tasks.forEach(taskRepository::delete);
+        project.setTasks(new HashSet<>(tasks));
 
         projectRepository.delete(project);
     }
@@ -144,9 +145,7 @@ public class ProjectServiceImpl implements ProjectService {
             projectResponseList.add(response);
         }
 
-        var a =  new PageImpl<>(projectModelAssembler.toProject(projectResponseList));
-
-        return  a;
+        return new PageImpl<>(projectModelAssembler.toProject(projectResponseList));
     }
 
     private ProjectResponse getProjectResponse(Project project) {

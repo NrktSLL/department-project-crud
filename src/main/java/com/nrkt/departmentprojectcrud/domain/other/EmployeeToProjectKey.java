@@ -1,4 +1,4 @@
-package com.nrkt.departmentprojectcrud.model.other;
+package com.nrkt.departmentprojectcrud.domain.other;
 
 
 import lombok.AllArgsConstructor;

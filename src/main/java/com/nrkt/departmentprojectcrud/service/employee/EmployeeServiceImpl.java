@@ -6,7 +6,7 @@ import com.nrkt.departmentprojectcrud.exception.employee.EmployeeCanNotBeEmpty;
 import com.nrkt.departmentprojectcrud.exception.employee.EmployeeNotFoundException;
 import com.nrkt.departmentprojectcrud.exception.location.LocationNotFoundException;
 import com.nrkt.departmentprojectcrud.helper.EmployeeModelAssembler;
-import com.nrkt.departmentprojectcrud.model.Employee;
+import com.nrkt.departmentprojectcrud.domain.Employee;
 import com.nrkt.departmentprojectcrud.repository.EmployeeRepository;
 import com.nrkt.departmentprojectcrud.repository.EmployeeToProjectRepository;
 import com.nrkt.departmentprojectcrud.repository.LocationRepository;
