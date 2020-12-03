@@ -13,7 +13,7 @@
 * Map Struct
 * Dev Tools
 * Swagger
-* Content Negotiation Support(Xml,Json,Yaml Support)
+* Content Negotiation Support(Xml,Json,Hal,Yaml Support)
 
 
 ## Swagger
