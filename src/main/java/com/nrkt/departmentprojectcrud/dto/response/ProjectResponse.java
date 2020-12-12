@@ -11,7 +11,7 @@ import javax.validation.constraints.NotBlank;
 import java.util.Set;
 
 @Data
-@NoArgsConstructor(force = true)
+@NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)

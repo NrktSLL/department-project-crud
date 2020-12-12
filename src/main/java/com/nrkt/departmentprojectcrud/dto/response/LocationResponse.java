@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 
 
 @Data
-@NoArgsConstructor(force = true)
+@NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)

@@ -23,7 +23,7 @@ public class Project extends BaseEntity {
     String jobTitle;
     @Column
     Double salary;
-    @Column(columnDefinition = "tinyint(1) default 1")
+    @Column(columnDefinition = "boolean default true")
     Boolean status;
 
     @ToString.Exclude

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.nrkt</groupId>
     <artifactId>department-project-crud</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>department-project-crud</name>
     <description>Spring Boot CRUD Example</description>
 
@@ -22,6 +22,7 @@
         <springfox-swagger-ui.version>3.0.0</springfox-swagger-ui.version>
         <jackson-dataformat-xml.version>2.11.2</jackson-dataformat-xml.version>
         <jackson.dataformat.yml.version>2.5.4</jackson.dataformat.yml.version>
+        <google.lib.version>2.7.0</google.lib.version>
     </properties>
 
     <dependencies>
@@ -56,6 +57,11 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
 
@@ -137,6 +143,16 @@
                             <version>${lombok-mapstruct-binding.version}</version>
                         </path>
                     </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>${google.lib.version}</version>
+                <configuration>
+                    <from>
+                        <image>adoptopenjdk/openjdk11:alpine</image>
+                    </from>
                 </configuration>
             </plugin>
         </plugins>

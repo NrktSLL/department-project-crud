@@ -70,6 +70,7 @@ public class ProjectController implements BaseController<ProjectResponse, Projec
     }
 
     @Override
+    @ApiOperation(value = "Delete Department")
     public void deleteEntity(@NotNull Long id) {
         projectService.removeProject(id);
     }

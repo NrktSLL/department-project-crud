@@ -11,6 +11,7 @@ import com.nrkt.departmentprojectcrud.mapper.EmployeeMapper;
 import com.nrkt.departmentprojectcrud.domain.Employee;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -29,7 +30,8 @@ public class EmployeeModelAssembler extends RepresentationModelAssemblerSupport<
     }
 
     @Override
-    public EmployeeResponse toModel(Employee entity) {
+    @NonNull
+    public EmployeeResponse toModel(@NonNull Employee entity) {
 
         EmployeeResponse employeeResponse = employeeMapper.employeeEntityToEmployeeResponse(entity);
 

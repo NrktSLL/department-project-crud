@@ -83,7 +83,7 @@ public class EmployeeController implements BaseController<EmployeeResponse, Empl
         employeeService.removeEmployee(id);
     }
 
-    @GetMapping("/findbyemail")
+    @GetMapping("/findbyemail/{mail}")
     @ResponseStatus(HttpStatus.OK)
     @ApiOperation(value = "Bring Employee Information by Mail")
     @ApiResponses(value = {

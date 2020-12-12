@@ -29,6 +29,7 @@ public class DepartmentController implements BaseController<DepartmentResponse, 
     DepartmentService departmentService;
 
     @Override
+    @ApiOperation(value = "All Department")
     public PagedModel<DepartmentResponse> getEntityList(
             @ApiParam(value = "Page Number")
             @RequestParam(defaultValue = "0", required = false) Integer page,

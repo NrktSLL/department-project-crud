@@ -7,6 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 
 public interface ProjectRepository extends JpaRepository<Project, Long> {
-    //@Query("SELECT project FROM Project project WHERE project.status = :status")
     Page<Project> findByStatus(@Param("status") boolean status, Pageable pageable);
 }

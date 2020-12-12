@@ -12,6 +12,7 @@ import com.nrkt.departmentprojectcrud.mapper.ProjectMapper;
 import com.nrkt.departmentprojectcrud.domain.Project;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -30,7 +31,8 @@ public class ProjectModelAssembler extends RepresentationModelAssemblerSupport<P
     }
 
     @Override
-    public ProjectResponse toModel(Project entity) {
+    @NonNull
+    public ProjectResponse toModel(@NonNull Project entity) {
 
         ProjectResponse projectResponse = projectMapper.projectEntityToProjectResponse(entity);
 

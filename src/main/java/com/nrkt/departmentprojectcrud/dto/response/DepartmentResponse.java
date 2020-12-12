@@ -10,7 +10,7 @@ import org.springframework.hateoas.server.core.Relation;
 import javax.validation.constraints.NotBlank;
 
 @Data
-@NoArgsConstructor(force = true)
+@NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)

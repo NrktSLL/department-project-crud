@@ -9,6 +9,7 @@ import com.nrkt.departmentprojectcrud.mapper.LocationMapper;
 import com.nrkt.departmentprojectcrud.domain.Location;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -27,7 +28,8 @@ public class LocationModelAssembler extends RepresentationModelAssemblerSupport<
     }
 
     @Override
-    public LocationResponse toModel(Location entity) {
+    @NonNull
+    public LocationResponse toModel(@NonNull Location entity) {
 
         LocationResponse locationResponse = locationMapper.locationEntityToLocationResponse(entity);
 

@@ -1,11 +1,7 @@
 package com.nrkt.departmentprojectcrud.exception.employee;
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
-
-@Slf4j
-@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "Employee not found!")
 public class EmployeeNotFoundException extends RuntimeException {
-
+    public EmployeeNotFoundException() {
+        super("Employee not found!");
+    }
 }

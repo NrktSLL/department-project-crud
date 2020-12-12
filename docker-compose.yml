@@ -1,0 +1,32 @@
+version: "3.6"
+services:
+  app:
+    image: nrkt/department-project-crud
+    container_name: departmenttask
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    environment:
+      - PROFILE
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+      - POSTGRES_HOST
+      - POSTGRES_PORT
+
+  postgresql:
+    image: postgres
+    container_name: postgresql
+    command: "
+                postgres
+                  -c max_connections=200
+                  -c logging_collector=on
+                  -c log_min_messages=LOG
+                  -c log_directory=/var/log/postgresql"
+    ports:
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    volumes:
+      - /var/lib/postgresql

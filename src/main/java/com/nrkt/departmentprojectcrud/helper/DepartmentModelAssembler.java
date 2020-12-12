@@ -11,6 +11,7 @@ import com.nrkt.departmentprojectcrud.mapper.DepartmentMapper;
 import com.nrkt.departmentprojectcrud.domain.Department;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -29,7 +30,8 @@ public class DepartmentModelAssembler extends RepresentationModelAssemblerSuppor
     }
 
     @Override
-    public DepartmentResponse toModel(Department entity) {
+    @NonNull
+    public DepartmentResponse toModel(@NonNull Department entity) {
 
         DepartmentResponse departmentResponse = departmentMapper.departmentEntityToDepartmentResponse(entity);
 
