@@ -1,5 +1,5 @@
 # Spring Boot CRUD Example 
-> It is an example of Basic CRUD with Richardson Maturity Model Level 3 (HATEOAS).
+> It is an example of CRUD with Richardson Maturity Model Level 3 (HATEOAS).
 >
 
 ## Used Dependencies
@@ -13,7 +13,7 @@
 * Map Struct
 * Dev Tools
 * Swagger
-* Content Negotiation Support(Xml,Json,Yaml Support)
+* Content Negotiation Support(Xml,Json,Hal,Yaml Support)
 
 
 ## Swagger
